@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Đăng ký thành viên</h1>
+  <form id="registration-form" onsubmit="submitForm(event)">
+    <label for="student-id">Mã sinh viên:</label>
+    <input type="text" id="student-id" required>
+    
+    <label for="full-name">Họ và tên:</label>
+    <input type="text" id="full-name" required>
+    
+    <label for="date-of-birth">Ngày sinh:</label>
+    <input type="date" id="date-of-birth" style="font-size: 20px;" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <label>Giới tính:</label>
+    <fieldset id="gender-form">
+    <input type="radio" id="gender-male" name="gender" value="male" required>
+    <label for="gender-male">Nam</label>
+    <input type="radio" id="gender-female" name="gender" value="female" required>
+    <label for="gender-female">Nữ</label>
+    <input type="radio" id="gender-other" name="gender" value="other" required>
+    <label for="gender-other">Khác</label>
+    </fieldset>
+    <br>
+    <label for="nationality">Quốc tịch:</label>
+    <select id="nationality" required>
+      <option value="" disabled selected>Chọn quốc tịch</option>
+      <option value="vn">Việt Nam</option>
+      <option value="us">United States</option>
+      <option value="jp">Nhậ Bản</option>
+      <option value="kr">Hàn Quốc</option>
+      <option value="cn">Trung Quốc</option>
+      
+    </select>
+    
+    <label for="note">Ghi chú:</label>
+    <textarea id="note" rows="4" maxlength="200"></textarea>
+    
+    <button type="submit">Đăng ký</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

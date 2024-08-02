@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--styles-->
+    <link href="./styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Book Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Book Shop</h1>
+      <p>Mua sách trực tuyến</p>
+    </div>
+    <div class="topnav">
+      <div class="menu-toggle">
+        <input type="checkbox" id="menucheck" />
+        <div class="menu-btn">
+          <label for="menucheck">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </div>
+      <a class="btn-home" href="index.html">Trang chủ</a>
+      <a class="btn-book" href="">Loại sách</a>
+      <a href="khoanh.html" class="btn-picture">Kho ảnh</a>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm sách..." name="search" />
+        <button class="btn-search" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <a id="icon-button" href="./banHang/banHang.html"
+        ><i class="fa-solid fa-cart-shopping"></i
+      ></a>
+      <a class="btn-login" href="login/login.html" style="float: right"
+        >Đăng nhập</a
+      >
+      <a class="btn-login" href="sign-up/sign-up.html" style="float: right"
+        >Đăng ký</a
+      >
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="grid-container">
+          <div
+            class="card-book"
+            onclick="window.location.href='book-information.html'"
+          >
+            <h2>NHÀ GIẢ KIM</h2>
+            <h5>Paulo Coelho</h5>
+            <img src="./images/1.jpg" alt="" style="height: 200px" />
+            <p>
+              "Nhà Giả Kim" là một cuốn tiểu thuyết viễn tưởng của nhà văn Paulo
+              Coelho. Cuốn sách kể về cuộc hành trình của một người phụ tá tên
+              Santiago trong việc tìm kiếm hiểu về ý nghĩa thực sự của cuộc
+              sống. Được cho là một câu chuyện về sự khám phá bản thân và tìm
+              kiếm đích thực...
+            </p>
+            <div class="book-price">
+              <p class="price"><del>180.000 VND</del></p>
+              <p class="price">150.000 VND</p>
+            </div>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+          <div
+            class="card-book"
+            onclick="window.location.href='book-information.html'"
+          >
+            <h2>ĐẮC NHÂN TÂM</h2>
+            <h5>Dale Carnegie</h5>
+            <img class="images" src="./images/2.jpg" />
+            <p>
+              "Đắc Nhân Tâm" là một trong những cuốn sách kinh điển về phát
+              triển cá nhân và quan hệ con người của Dale Carnegie. Cuốn sách
+              giúp độc giả hiểu về tâm lý con người, cách giao tiếp hiệu quả và
+              cách xây dựng mối quan hệ tốt với người khác...
+            </p>
+            <div class="book-price">
+              <p class="price"><del>200.000 VND</del></p>
+              <p class="price">180.000 VND</p>
+            </div>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+          <div
+            class="card-book"
+            onclick="window.location.href='book-information.html'"
+          >
+            <h2>CÁCH NGHĨ ĐỂ THÀNH CÔNG</h2>
+            <h5>Napoleon Hill</h5>
+            <img class="images" src="./images/0.jpg" />
+            <p>
+              Cách Nghĩ Để Thành Công mang tới cho bạn triết lý thành đạt, đồng
+              thời cung cấp phương pháp để bạn lên kế hoạch chi tiết để đạt được
+              thành công đó. Không chỉ có lý thuyết suông, tác phẩm này được dẫn
+              chứng từ những trường hợp...
+            </p>
+            <div class="book-price">
+              <p class="price"><del>220.000 VND</del></p>
+              <p class="price">200.000 VND</p>
+            </div>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+          <div
+            class="card-book"
+            onclick="window.location.href='book-information.html'"
+          >
+            <h2>QUẲNG GẮNG LO ĐI</h2>
+            <h5>Dale Carnegie</h5>
+            <img class="images" src="./images/5.jpg" />
+            <p>
+              Quẳng Gánh Lo Đi Và Vui Sống phân tích và giải đáp những nỗi buồn,
+              lo lắng diễn ra hàng ngày trong cuộc sống của mỗi người. Để từ đó
+              tác giả xây dựng nên thái độ sống tích cực, hạnh phúc và từ bỏ
+              thói quen lo lắng để giúp bản thân luôn vui vẻ và tích cực để vượt
+              qua khó khăn.
+            </p>
+            <div class="book-price">
+              <p class="price"><del>150.000 VND</del></p>
+              <p class="price">130.000 VND</p>
+            </div>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+          <div
+            class="card-book"
+            onclick="window.location.href='book-information.html'"
+          >
+            <h2>HẠT GIỐNG TÂM HỒN</h2>
+            <h5>Nhiều tác giả</h5>
+            <img class="images" src="./images/3.jpg" />
+            <p>
+              Bộ sách hạt giống tâm hồn là bộ sách được tổng hợp các câu chuyện,
+              bức tranh đầy ý nghĩa về cuộc sống của nhiều tác giả khác nhau. Đó
+              là những câu chuyện về sự thành công, tấm lòng cao đẹp giữa con
+              người với con người...
+            </p>
+            <div class="book-price">
+              <p class="price"><del>190.000 VND</del></p>
+              <p class="price">160.000 VND</p>
+            </div>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+          <div
+            class="card-book"
+            onclick="window.location.href='book-information.html'"
+          >
+            <h2>ĐỌC VỊ BẤT KÌ AI</h2>
+            <h5>David J.Lieberman</h5>
+            <img class="images" src="./images/4.jpg" />
+            <p>
+              Đọc Vị Bất Kỳ Ai là một quyển cẩm nang dạy bạn cách thâm nhập vào
+              tâm trí của người khác, để suy đoán được họ đang nghĩ gì. Cuốn
+              sách có nội dung bao gồm 2 phần chính và được chia thành 15
+              chương. Đọc Vị Bất Kỳ Ai sẽ là sự lựa chọn phù hợp cho những ai
+              đang tìm kiếm một quyển sách để cải thiện và phát triển kỹ năng
+              giao tiếp.
+            </p>
+            <div class="book-price">
+              <p class="price"><del>250.000 VND</del></p>
+              <p class="price">200.000 VND</p>
+            </div>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Giới thiệu</h2>
+
+          <p>ĐÂY LÀ WEB DÀNH CHO NGƯỜI ĐAM MÊ SÁCH</p>
+        </div>
+        <div class="card">
+          <h2>Follow Me</h2>
+          <ul class="icons">
+            <li>
+              <span class="icon"><i class="fa fa-facebook"></i></span>
+              <span class="titulo">Facebook</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-github"></i></span>
+              <span class="titulo">Github</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-whatsapp"></i></span>
+              <span class="titulo">WhatsApp</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-linkedin"></i></span>
+              <span class="titulo">LinkedIn</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-instagram"></i></span>
+              <span class="titulo">Instagram</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Liên hệ</h2>
+          <h4>
+            Điện thoại: <i clas s="fab fa-whatsapp-square"></i> 0384845301
+          </h4>
+          <h4>
+            Email:
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            21H1120036@ut.edu.vn <br />
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer full-width">
+      <span>© 2023 Book Shop. All rights reserved.</span>
+    </div>
+  </body>
+</html>

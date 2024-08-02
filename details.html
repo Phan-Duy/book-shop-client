@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--styles-->
+    <link href="./styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Book Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Book Shop</h1>
+      <p>Mua sách trực tuyến</p>
+    </div>
+    <div class="topnav">
+      <div class="menu-toggle">
+        <input type="checkbox" id="menucheck" />
+        <div class="menu-btn">
+          <label for="menucheck">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="index.html">Trang chủ</a>
+      <a href="./details.html">Kho sách</a>
+      <a href="#">Sách bán chạy</a>
+      <a href="#">Giảm giá</a>
+      <div class="search-container">
+        <input type="text" placeholder="Tìm sách..." name="search" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+      <a class="btn-login" href="login/login.html" style="float: right"
+        >Đăng nhập</a
+      >
+      <a class="btn-login" href="sign-up/sign-up.html" style="float: right"
+        >Đăng ký</a
+      >
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="grid-container">
+          <div class="card-book">
+            <div class="book-image">
+              <img src="" alt="Sách 1" />
+            </div>
+            <div class="book-name">Sách 1</div>
+            <div class="book-price">$9.99</div>
+          </div>
+          <div class="card-book">Sách 2</div>
+          <div class="card-book">Sách 3</div>
+
+          <div class="card-book">Sách 4</div>
+          <div class="card-book">Sách 5</div>
+          <div class="card-book">Sách 6</div>
+
+          <div class="card-book">Sách 7</div>
+          <div class="card-book">Sách 8</div>
+          <div class="card-book">Sách 9</div>
+
+          <div class="card-book">Sách 10</div>
+          <div class="card-book">Sách 11</div>
+          <div class="card-book">Sách 12</div>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">...</a>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Giới thiệu</h2>
+          <p>ĐÂY LÀ WEB DÀNH CHO NGƯỜI ĐAM MÊ SÁCH</p>
+        </div>
+        <div class="card">
+          <h2>Follow Me</h2>
+          <ul class="icons">
+            <li>
+              <span class="icon"><i class="fa fa-facebook"></i></span>
+              <span class="titulo">Facebook</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-twitter"></i></span>
+              <span class="titulo">Twitter</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-whatsapp"></i></span>
+              <span class="titulo">WhatsApp</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-linkedin"></i></span>
+              <span class="titulo">LinkedIn</span>
+            </li>
+            <li>
+              <span class="icon"><i class="fa fa-instagram"></i></span>
+              <span class="titulo">Instagram</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Liên hệ</h2>
+          <h4>
+            Điện thoại: <i clas s="fab fa-whatsapp-square"></i> 0384845301
+          </h4>
+          <h4>
+            Email:
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            21H1120036@ut.edu.vn <br />
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <span>© 2023 Book Shop. All rights reserved.</span>
+    </div>
+  </body>
+</html>
